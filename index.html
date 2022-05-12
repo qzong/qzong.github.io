@@ -74,7 +74,7 @@
     <article id="post-vue3-setup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/05/12/vue3-setup/" class="article-date">
-  <time class="dt-published" datetime="2022-05-12T09:13:36.000Z" itemprop="datePublished">2022-05-12</time>
+  <time class="dt-published" datetime="2022-05-12T09:13:36.106Z" itemprop="datePublished">2022-05-12</time>
 </a>
     
   </div>
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/12/vue3-setup/">vue3_setup</a>
+      <a class="p-name article-title" href="/2022/05/12/vue3-setup/">vue3学习：setup的使用</a>
     </h1>
   
 
@@ -93,11 +93,13 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>##概念<br>setup 是 vue3 中的一个新的配置项，值为一个函数，我们在组件中用到的数据、方法等等，都要配置在 setup 中。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">	test1() &#123;</span><br><span class="line">		console.log(this.sex);</span><br><span class="line">		console.log(this.sayHello);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;,</span><br><span class="line">setup() &#123;</span><br><span class="line">	const sex = ref(&#x27;女&#x27;)</span><br><span class="line">	function sayHello() &#123;</span><br><span class="line">		alert(&#x27;你好啊&#x27;)</span><br><span class="line">	&#125;</span><br><span class="line">	return &#123;</span><br><span class="line">		sex,</span><br><span class="line">		sayHello</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/12/vue3-setup/" data-id="cl32srl9k000128jj5kpqgicb" data-title="vue3_setup" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/05/12/vue3-setup/" data-id="cl32srl9k000128jj5kpqgicb" data-title="vue3学习：setup的使用" class="article-share-link">Share</a>
       
       
       
@@ -191,7 +193,7 @@
       <ul>
         
           <li>
-            <a href="/2022/05/12/vue3-setup/">vue3_setup</a>
+            <a href="/2022/05/12/vue3-setup/">vue3学习：setup的使用</a>
           </li>
         
           <li>
